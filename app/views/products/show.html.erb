@@ -1,0 +1,8 @@
+<%= turbo_stream_from @product %>
+
+<%= render 'product_info', product: @product, bid: @bid %>
+
+<h2>Bids</h2>
+<ul class="list-group" id='bids' >
+  <%= render @bids %>
+</ul>
